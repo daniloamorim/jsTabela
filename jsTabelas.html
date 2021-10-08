@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em JavaScript</title>
+    <script type="text/javascript" src="jsTabelas.js"></script>
+    <style>
+        #dfPessoas{
+            font:14px Verdana;
+            margin-left: 35%;
+            margin-top: 150px;
+        }
+        #dtPessoas{
+            font: 14px Verdana;
+            margin-left: 25%;
+        }
+        table tr td{
+            width: 140px;
+            border: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="" id="dfPessoas">
+        <form name="fPessoas">
+            <label>Nome</label><br/>
+            <input type="text" name="txtNome"/><br/><br/>
+            <label>Sobreome</label><br/>
+            <input type="text" name="txtSobrenome"/><br/><br/>
+            <label>E-mail</label><br/>
+            <input type="text" name="txtEmail"/><br/><br/>
+            <label>Altura</label><br/>
+            <input type="text" name="txtAltura"/><br/><br/>
+            <label>Sexo</label><br/>
+            <input type="text" name="txtSexo"/><br/><br/>
+            <input type="button" value="Adiciona Pessoa" onclick="cadPessoa(txtNome.value, txtSobrenome.value, txtEmail.value, txtAltura.value, txtSexo.value)"/>
+        </form>
+    </div><br/><br/>
+    <div class="" id="dtPessoas">
+        <table id="tbPessoas">
+            <thead>
+                <tr>
+                    <td>Código</td>
+                    <td>Nome</td>
+                    <td>Sobrenome</td>
+                    <td>E-mail</td>
+                    <td>Altura</td>
+                    <td>Sexo</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>
